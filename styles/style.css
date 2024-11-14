@@ -1,28 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
 .logo {
   max-width: 201px;
   width: 80%;
@@ -35,7 +11,6 @@ nav {
   right: 0;
   left: 0;
   padding: 30px 0;
-  margin: 0 auto;
   height: 100px;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
@@ -59,9 +34,9 @@ nav .container {
 
 .nav-links {
   position: absolute;
-  right: 0;
   height: 100vh;
   top: 100px;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,7 +53,6 @@ nav .container {
   gap: 20px;
   width: 25%;
   max-width: 250px;
-  min-width: 200px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.5s ease-in;
@@ -129,6 +103,7 @@ nav .container {
 
 html {
   font-size: 9px;
+  overflow-x: hidden;
 }
 
 body {
@@ -774,7 +749,7 @@ footer .container .footer-table .col {
 footer .container .footer-table .col a {
   line-height: 40px;
 }
-footer .container .footer-table .col p {
+footer .container .footer-table .col .col-head {
   color: #92989F;
   font-weight: 600;
 }

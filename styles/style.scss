@@ -11,6 +11,7 @@
 
 html {
     font-size: 9px;
+    overflow-x: hidden;
 }
 
 body{
@@ -563,7 +564,7 @@ footer {
                 a {
                     line-height: 40px;
                 }
-                p {
+                .col-head {
                     color: #92989F;
                     font-weight: 600;
                 }
