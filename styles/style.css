@@ -445,6 +445,9 @@ header .container .cards::after {
           box-shadow: 9px 9px 90px 0px #9130F4;
   margin: 20px auto;
 }
+#delivering .container .image-wrapper img {
+  width: 100%;
+}
 #delivering .container .content {
   max-width: 820px;
   padding: 0 70px;
@@ -521,6 +524,7 @@ header .container .cards::after {
 #cases {
   position: relative;
   padding: 135px 10px 250px;
+  overflow-x: hidden;
 }
 #cases h2 {
   margin: 0 auto 44px;
