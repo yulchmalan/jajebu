@@ -29,4 +29,29 @@ const navSlide = () => {
         }
     });
 };
+
+
+// Отримуємо всі секції та індикатор
+const sections = document.querySelectorAll('section');
+const indicatorText = document.getElementById('indicator-text');
+
+// Функція для оновлення тексту індикатора
+function updateIndicator() {
+  let currentSectionLabel = sections[0].querySelector('h2').textContent;
+
+  sections.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 100 && rect.bottom >= 100) { 
+      const sectionLabel = section.querySelector('.highlight');
+      if (sectionLabel) {
+        currentSectionLabel = sectionLabel.textContent; 
+      }
+    }
+  });
+
+  indicatorText.textContent = currentSectionLabel;
+}
+
+window.addEventListener('scroll', updateIndicator);
 navSlide();
+
