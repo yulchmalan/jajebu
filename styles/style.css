@@ -645,6 +645,7 @@ header .container .cards::after {
   position: relative;
   z-index: -1;
   overflow: hidden;
+  overflow-x: hidden;
 }
 #finance h2 {
   text-align: center;

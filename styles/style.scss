@@ -514,6 +514,7 @@ header {
             }
         }
     }
+    overflow-x: hidden;
     &::after {
         content: "";
         position: absolute;
