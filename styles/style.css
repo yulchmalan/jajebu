@@ -51,10 +51,6 @@ nav .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .scrolled {
@@ -64,7 +60,7 @@ nav .container {
 .nav-links {
   position: absolute;
   right: 0;
-  height: calc(100vh - 100px);
+  height: 100vh;
   top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,7 +212,7 @@ header {
 header::after {
   content: "";
   position: absolute;
-  display: block;
+  display: none;
   width: 881px;
   height: 881px;
   background: linear-gradient(177.23deg, rgba(66, 62, 224, 0.4) -13.49%, rgba(129, 45, 226, 0.4) 109.75%);
@@ -230,7 +226,7 @@ header::after {
 header::before {
   content: "";
   position: absolute;
-  display: block;
+  display: none;
   width: 510px;
   height: 510px;
   background: linear-gradient(177.23deg, rgba(66, 62, 224, 0.4) -13.49%, rgba(129, 45, 226, 0.4) 109.75%);
@@ -807,6 +803,12 @@ footer .container .copyright {
     padding: 280px 70px;
   }
   #cases .container .content::before {
+    display: block;
+  }
+  header::before {
+    display: block;
+  }
+  header::after {
     display: block;
   }
 }
