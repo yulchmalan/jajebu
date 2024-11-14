@@ -583,7 +583,7 @@ footer {
         .container {
             .content {
                 &::before {
-                    opacity: 1;
+                    display: block;
                 }
             }
         }
@@ -611,7 +611,7 @@ footer {
             margin: 0 auto;
             width: 1170px;
             &::before {
-                display: block;
+                opacity: 1;
             }
         }
     }

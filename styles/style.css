@@ -788,7 +788,7 @@ footer .container .copyright {
     gap: 40px;
   }
   #cases .container .content::before {
-    opacity: 1;
+    display: block;
   }
 }
 @media (min-width: 1440px) {
@@ -812,7 +812,7 @@ footer .container .copyright {
     width: 1170px;
   }
   #finance .content::before {
-    display: block;
+    opacity: 1;
   }
 }
 @media (min-width: 1540px) {
