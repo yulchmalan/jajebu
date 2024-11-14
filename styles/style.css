@@ -348,6 +348,7 @@ header .container .cards::after {
 
 #consulting {
   text-align: center;
+  overflow: hidden;
 }
 #consulting .container {
   display: -webkit-box;
@@ -631,6 +632,7 @@ header .container .cards::after {
   position: relative;
 }
 .right-light::after {
+  opacity: 0;
   content: "";
   position: absolute;
   display: block;
@@ -724,6 +726,7 @@ header .container .cards::after {
   border-radius: 30px;
 }
 #finance::after {
+  opacity: 0;
   content: "";
   position: absolute;
   display: block;
@@ -808,6 +811,9 @@ footer .container .copyright {
   }
 }
 @media (min-width: 1440px) {
+  .right-light::after {
+    opacity: 1;
+  }
   .container {
     padding: 0;
   }
@@ -821,6 +827,9 @@ footer .container .copyright {
   }
   #delivering .image-wrapper {
     margin: 0 auto;
+  }
+  #finance::after {
+    opacity: 1;
   }
   #finance .content {
     position: relative;

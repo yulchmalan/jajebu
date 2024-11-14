@@ -201,6 +201,7 @@ header {
 
 #consulting {
     text-align: center;
+    overflow: hidden;
     .container {
         display: flex;
         flex-direction: column;
@@ -440,6 +441,7 @@ header {
     overflow: hidden;
     position: relative;
     &::after {
+        opacity: 0;
         content: "";
         position: absolute;
         display: block;
@@ -524,6 +526,7 @@ header {
     }
     overflow-x: hidden;
     &::after {
+        opacity: 0;
         content: "";
         position: absolute;
         display: block;
@@ -605,6 +608,11 @@ footer {
 }
 
 @media(min-width:1440px) {
+    .right-light {
+        &::after {
+            opacity: 1;
+        }
+    }
     .container {
         padding: 0;
     }
@@ -620,6 +628,9 @@ footer {
         }
     }
     #finance {
+        &::after {
+            opacity: 1;
+        }
         .content {
             position: relative;
             margin: 0 auto;
