@@ -583,7 +583,7 @@ footer {
         .container {
             .content {
                 &::before {
-                    display: block;
+                    opacity: 1;
                 }
             }
         }
@@ -625,7 +625,7 @@ footer {
         .container {
             justify-content: space-between;
             .content {
-                opacity: 1;
+                text-align: left;
             }
         }
     }

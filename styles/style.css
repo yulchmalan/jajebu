@@ -788,7 +788,7 @@ footer .container .copyright {
     gap: 40px;
   }
   #cases .container .content::before {
-    display: block;
+    opacity: 1;
   }
 }
 @media (min-width: 1440px) {
@@ -825,7 +825,7 @@ footer .container .copyright {
             justify-content: space-between;
   }
   header .container .content {
-    opacity: 1;
+    text-align: left;
   }
   #cases .container ul {
     gap: 78px;
