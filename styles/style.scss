@@ -434,7 +434,11 @@ header {
             }
         }
     }
-    overflow-x: hidden;
+}
+
+.right-light {
+    overflow: hidden;
+    position: relative;
     &::after {
         content: "";
         position: absolute;
@@ -444,7 +448,7 @@ header {
         background: linear-gradient(177.23deg, rgba(66, 62, 224, 0.71) -13.49%, #4829A5 109.75%);
         filter: blur(450px);
         border-radius: 50%;
-        bottom: -50%;
+        top: 50%;
         right: 0;
         transform: translate(50%, -50%);
     }

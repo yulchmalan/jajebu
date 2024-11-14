@@ -524,7 +524,6 @@ header .container .cards::after {
 #cases {
   position: relative;
   padding: 135px 10px 250px;
-  overflow-x: hidden;
 }
 #cases h2 {
   margin: 0 auto 44px;
@@ -626,7 +625,12 @@ header .container .cards::after {
   top: 40%;
   opacity: 0.3;
 }
-#cases::after {
+
+.right-light {
+  overflow: hidden;
+  position: relative;
+}
+.right-light::after {
   content: "";
   position: absolute;
   display: block;
@@ -636,7 +640,7 @@ header .container .cards::after {
   -webkit-filter: blur(450px);
           filter: blur(450px);
   border-radius: 50%;
-  bottom: -50%;
+  top: 50%;
   right: 0;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
