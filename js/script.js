@@ -31,11 +31,11 @@ const navSlide = () => {
 };
 
 
-// Отримуємо всі секції та індикатор
+
 const sections = document.querySelectorAll('section');
 const indicatorText = document.getElementById('indicator-text');
 
-// Функція для оновлення тексту індикатора
+
 function updateIndicator() {
   let currentSectionLabel = sections[0].querySelector('h2').textContent;
 
@@ -51,7 +51,9 @@ function updateIndicator() {
 
   indicatorText.textContent = currentSectionLabel;
 }
+if (indicatorText) {
+  window.addEventListener('scroll', updateIndicator);
+}
 
-window.addEventListener('scroll', updateIndicator);
 navSlide();
 
